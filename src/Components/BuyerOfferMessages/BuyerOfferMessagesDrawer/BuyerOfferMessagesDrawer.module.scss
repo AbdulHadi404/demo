@@ -1,0 +1,74 @@
+.buyer__wrapper {
+  display: block;
+}
+
+.buyer__wrapper--hidden {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buyer__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 23px;
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.buyer__details {
+  display: grid;
+  gap: 21px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  max-width: auto;
+  max-height: auto;
+  transition: max-height 0.6s ease;
+}
+
+.buyer__details--hidden {
+  overflow: hidden;
+  max-width: 0;
+  max-height: 0;
+}
+
+.buyer__details b {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.toggle__icon,
+.toggle__icon--rotate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #48964a;
+}
+
+.toggle__icon--rotate svg {
+  transform: rotate(180deg);
+  transition: transform 1s ease-in-out;
+}
+
+.toggle__icon svg path,
+.toggle__icon--rotate svg path {
+  fill: #48964a;
+  margin-left: 3.6px;
+}
+
+.grid--colums {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
