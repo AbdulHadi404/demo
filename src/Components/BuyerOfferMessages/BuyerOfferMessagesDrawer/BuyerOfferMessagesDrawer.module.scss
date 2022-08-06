@@ -1,11 +1,19 @@
 .buyer__wrapper {
+  position: relative;
   display: block;
+  height: 185px;
+  transition: .6s;
+  
+
 }
 
 .buyer__wrapper--hidden {
+  height: 81px;
+  transition: .6s;
+  justify-content: center;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
 }
 
 .buyer__header {
@@ -27,15 +35,20 @@
   line-height: 15px;
   margin-top: 20px;
   margin-bottom: 25px;
-  max-width: auto;
-  max-height: auto;
-  transition: max-height 0.6s ease;
+  height: 87px;
+  transition:height 0.6s ease;
 }
 
 .buyer__details--hidden {
   overflow: hidden;
-  max-width: 0;
-  max-height: 0;
+  height: 0;
+  display: grid;
+  gap: 21px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .buyer__details b {
@@ -55,11 +68,27 @@
   font-size: 12px;
   line-height: 15px;
   color: #48964a;
-}
 
+}
+.toggle__icon svg {
+  
+  transition: transform 1s ease-in-out;
+
+}
+.toggle__icon  {
+  
+  position: absolute ;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+
+}
+.toggle__icon--rotate{
+  position: relative;
+  top: auto;
+}
 .toggle__icon--rotate svg {
   transform: rotate(180deg);
-  transition: transform 1s ease-in-out;
 }
 
 .toggle__icon svg path,
